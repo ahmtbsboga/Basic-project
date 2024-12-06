@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* h1::selection{
+    background-color: black;
+    color: white;
+}
+* p::selection{
+    background-color: black;
+    color: white;
+}
+* span::selection{
+    background-color: black;
+    color: white;
+}
+* h2::selection{
+    background-color: black;
+    color: white;
+}
+* h3::selection{
+    background-color: black;
+    color: white;
+}
+* h4::selection{
+    background-color: black;
+    color: white;
+}
+* h5::selection{
+    background-color: black;
+    color: white;
+}
+* h6::selection{
+    background-color: black;
+    color: white;
+}
+*{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    /* görselin kendi arka 
+    plan rengini kaldırarak 
+    sitenin arka planıyla 
+    uyumlu yapar  */
+   /* mix-blend-mode:multiply;
+   /* mix-blend-mode: darken;
+   /* mix-blend-mode: normal; /* default */
+    /* mix-blend-mode:unset ; */
+   mix-blend-mode: darken; 
+   transition: all 0.4s ease-out;
+}
+img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    filter: drop-shadow(-18px -18px 100px rgb(24, 156, 116));
+}
+
+
+:root { 
+    --bg-color: #eaeaea;
+    --text-color: #252a34;
+
+
+
+
+
+
+}
+  
+
+/** HEADER AREA CSS START  */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    font-size: 13px;
+    
+    
+}
+
+header img{
+    width: 50px;
+    margin: 0 15px;
+   
+}
+
+#nav-left{
+    display: flex; 
+    align-items: center;
+    color: var(--text-color);
+    gap: 30px;
+    
+    
+}
+
+#nav-left a:hover{
+    transform:scale(1.2);
+}
+
+#nav-right a:hover{
+    transform:scale(1.2);
+}
+
+#nav-left a{
+    color: var(--text-color);
+    transition: all 0.3s linear;
+    border-right: 1px solid gray;
+    padding: 0 20px;
+}
+
+/*#nav-left a:nth-child(4){
+    border-right: none;
+} */
+
+#nav-left a:last-child{
+    border-right: none;
+}
+
+#nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+    
+}
+
+#nav-right a{
+    color: var(--text-color);
+    transition: all 0.3s linear;
+    border-right: 1px solid gray;
+    padding: 0 20px;
+
+}
+
+#nav-right a:last-child{
+    border-right: none;
+}
+
+#nav-left a:hover{
+    
+    color: crimson; 
+}
+
+#nav-right a:hover{
+    
+    color: crimson; 
+}
+
+.opener{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 2px 2px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    
+
+}
+
+.opener a{
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+
+.menu{
+    width: 40px;
+    display: none;
+    
+}
+
+.menu:hover +.opener a{
+    display: flex;
+
+}
+
+
+
+
+/** HEADER AREA CSS FİNİSH  */
+
+
+/** MAİN AREA CSS START  */
+
+.main{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(202, 199, 199);
+    mix-blend-mode: darken;
+}
+
+.main-text{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 50px;
+   
+}
+
+.main-text h1{
+   
+    margin: 0 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+
+.main-img{
+    margin: 40px 70px;
+    
+    
+    
+  
+}
+
+.main-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.main-2-left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position:relative;
+    
+}
+
+.main-2-left p{
+    text-align: center;
+    margin-left: 20px;
+}
+
+.main-2-left h2{
+    text-transform: capitalize;
+}
+
+.main-2-left img{
+    width: 200px;
+    position: absolute;
+    top: -130px;
+    transition: all 0.4s ease-out;
+    mix-blend-mode: darken; 
+}
+
+.main-2-left img:hover{ 
+    cursor: pointer;
+    transform: scale(1.2);
+    
+    filter: drop-shadow(-18px -18px 100px rgb(24, 156, 116));
+}
+
+.main-2-right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position:relative;
+    mix-blend-mode: darken; 
+}
+
+.main-2-right img{
+    mix-blend-mode:darken;
+    width: 350px;
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    
+    
+}
+
+.main-2-right p{
+    text-align: center;
+    padding: 140px 10px;
+    margin-right: 20px;
+}
+
+.btn{
+    letter-spacing: 4px;
+    padding: 4px 8px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    transform: scale(1.2);
+    
+}
+
+.design{
+    width: 100%;
+    height: 500px;
+    background-image: 
+    radial-gradient(rgba(0,0,0,0.5),black),url(./images/bmw-banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+    
+    
+      
+}
+
+.design-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 80px;
+    color:var(--bg-color);
+    
+}
+
+.design-text h1{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.design-text p{
+    font-size: 18px;
+    line-height: -2px;
+}
+
+span{
+    color: rgb(24, 156, 116);
+}
+
+.design .btn{
+    padding: 14px 20px;
+    
+}
+
+.design .btn:hover{
+    border: 2px solid black;
+    background-color: transparent;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+/** MAİN AREA FİNİSH */
+
+/** CAR MENU AREA START */
+
+.car-menu-img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+  
+}
+
+.car h2{
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.car h2:hover{
+    color: rgb(24, 156, 116);
+    transform: scale(1.2);
+}
+
+.car-menu-img img{
+     
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-menu-text{
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+
+.car-menu-text:hover{
+    transform: scale(1.4);
+    letter-spacing: 8px;
+    color: rgb(24, 156, 116);
+}
+.buttons{
+    
+    margin-top: 10px;
+    text-align: center;
+}
+.buttons .btn{
+    padding: 20px 20px;
+    border-radius: 20px;
+    letter-spacing: 12px;
+}
+
+/** CAR MENU AREA FİNİSH */
+/** EXTERIOR AREA START  */
+
+.exterior-text{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: var(--bg-color);
+    padding: 100px 0;
+}
+
+.exterior-text h1{
+    font-size: 35px;
+}
+
+.exterior-text p{
+    line-height: 34px;
+}
+
+.exterior-text .btn{
+    padding: 20px 20px;
+    border-radius: 20px;
+    letter-spacing: 12px;
+}
+
+.exterior-text .btn:hover{
+ color: white;
+}
+
+.exterior{
+    background-image:radial-gradient(rgba(0,0,0,0.5),black),url(./images/bmw-6.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/** Exterior Area Finish */
+/** Footer Area Start */
+
+.Footer{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+    color: white;
+    padding: 70px 30px;
+    height: 300px;
+    justify-content: space-between;
+    gap: 500px;
+}
+
+.footer-img{
+    z-index: 100000;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+
+.footer ul li{
+    line-height: 42px;
+    transition: all 0.5s ease ;
+}
+
+.footer ul li:hover{
+    transform: scale(1.1);
+    text-shadow: -2px 4px 10px rgb(24, 156, 116);
+    color: crimson;
+}
+
+.footer-2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-2 ul li{
+    line-height: 42px;
+    transition: all 0.5s ease;
+}
+
+.footer-2 ul li:hover{
+    transform: scale(1.1);
+    text-shadow: -2px 4px 10px rgb(24, 156, 116);
+    color: crimson;
+}
+
+@media (max-width: 800px){
+    #nav-right{
+        display: none;
+    }
+    .menu{
+     display: block;  
+  }
+  .opener a{
+    display: none;
+  }
+
+  .main{
+    flex-direction: column-reverse;
+    
+    margin-bottom: 40px
+  }
+  .main-2{
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+  
+  
+}
